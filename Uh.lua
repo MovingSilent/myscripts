@@ -58,8 +58,8 @@ local ValiantAimHacks = getgenv().ValiantAimHacks
 
 -- // Show FOV
 local circle = Drawingnew("Circle")
-circle.Transparency = 0
-circle.Thickness = 2
+circle.Transparency = 10
+circle.Thickness = 0
 circle.Color = Color3fromRGB(231, 84, 128)
 circle.Filled = false
 function ValiantAimHacks.updateCircle()
