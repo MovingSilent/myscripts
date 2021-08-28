@@ -36,12 +36,12 @@ local FindFirstChild = Instancenew("Part").FindFirstChild
 -- // Silent Aim Vars
 getgenv().ValiantAimHacks = {
     SilentAimEnabled = true,
-    ShowFOV = false,
+    ShowFOV = true,
     FOVSides = 12,
     VisibleCheck = true,
     TeamCheck = true,
     FOV = 40,
-    HitChance = 70,
+    HitChance = 80,
     Selected = LocalPlayer,
     SelectedPart = nil,
     TargetPart = {"Head", "HumanoidRootPart"},
@@ -58,7 +58,7 @@ local ValiantAimHacks = getgenv().ValiantAimHacks
 
 -- // Show FOV
 local circle = Drawingnew("Circle")
-circle.Transparency = 10
+circle.Transparency = 0
 circle.Thickness = 0
 circle.Color = Color3fromRGB(231, 84, 128)
 circle.Filled = false
